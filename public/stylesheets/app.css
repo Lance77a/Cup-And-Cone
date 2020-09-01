@@ -30,7 +30,8 @@ h1 span {
 }
 
 .img-thumbnail {
-    background-color: #f498b8;
+    background-color: rgba(244,152,184, .5);
+    padding: .1em;
     border: none;
 }
 
