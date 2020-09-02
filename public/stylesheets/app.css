@@ -37,9 +37,10 @@ h1 span {
 
 #headingGroup h1 {
     font-family: "Merriweather", sans-serif;
+    color: #fbdb99;
     font-size: 4em;
     font-weight: 100;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 3px rgba(250,188,70,0.3);
 }
 
 .navbar.scrolled {
@@ -48,7 +49,7 @@ h1 span {
     
 }
 #headerNav .scroll.scrolled {
-    color: #f498b8;
+    color: #fbdb99;
 }
 
 @media (max-width: 1200px) {
@@ -92,7 +93,7 @@ hr {
   }
   .slash-1 {
     height: 10px;
-    color: #f498b8;
+    color: #fbdb99;
     background-image: linear-gradient(-45deg,
       transparent,
       transparent 25%,
