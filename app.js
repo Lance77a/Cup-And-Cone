@@ -15,7 +15,8 @@ app.get('/', (req, res) => res.redirect("index"));
 
 app.get("/index", (req, res) => res.render("index"));
 
+app.get("/index/about", (req, res) => res.render("about"));
 
-
+app.get("/index/events", (req, res) => res.render("events"));
 
 app.listen(3000, () => console.log('Server running on port 3000!'))
