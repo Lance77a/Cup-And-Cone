@@ -1,7 +1,5 @@
-
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $(".scroll");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());               
-    });
-});
+const headerScroll = (
+    $(document).scroll(() => {
+        let $nav = $(".scroll");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
+    }));
