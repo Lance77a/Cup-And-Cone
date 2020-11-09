@@ -35,9 +35,9 @@ h1 span {
 }
 
 .img-thumbnail {
-    background-color: rgba(244,152,184, .5);
-    padding: .1em;
-    border: none;
+    padding: 0;
+    border: 1px solid #f498b8ee;
+    margin-bottom: 0.5rem;
 }
 
 #headingGroup > h1 {
@@ -74,12 +74,13 @@ h1 span {
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-.blurb > .lead {
+.blurb .lead {
     font-family: $text;
     font-weight: 100;
     color: #fff;
-    font-size: 1.125rem;
+    font-size: 1.275rem;
     line-height: 2rem;
+    padding: 0 1rem;
     
 }
 
@@ -119,6 +120,7 @@ About Page CSS
 }
 
 p.title {
+    font-family: $text;
     font-weight: 400;
 }
 

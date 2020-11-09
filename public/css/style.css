@@ -25,9 +25,9 @@ h1 span {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
 
 .img-thumbnail {
-  background-color: rgba(244, 152, 184, 0.5);
-  padding: .1em;
-  border: none; }
+  padding: 0;
+  border: 1px solid #f498b8ee;
+  margin-bottom: 0.5rem; }
 
 #headingGroup > h1 {
   font-family: "Merriweather", sans-serif;
@@ -55,12 +55,13 @@ h1 span {
   font-size: 2.5rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
 
-.blurb > .lead {
+.blurb .lead {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   color: #fff;
-  font-size: 1.125rem;
-  line-height: 2rem; }
+  font-size: 1.275rem;
+  line-height: 2rem;
+  padding: 0 1rem; }
 
 .sectionMargin {
   margin-top: 5%; }
@@ -86,6 +87,7 @@ About Page CSS
   border-radius: 50%; }
 
 p.title {
+  font-family: "Lato", sans-serif;
   font-weight: 400; }
 
 #about-container {
