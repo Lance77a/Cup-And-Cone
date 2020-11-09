@@ -1,10 +1,84 @@
 <%- include("partials/header") %>
+<section class="container-fluid sectionMargin">
+    <div class="row">
+        <article class="col-md-3">
+            <h1 class="display-5">Reserve Entry Today!</h1>
+            <p class="lead">Join us for our upcoming event inspired by the ocean front venue. A whimsical rendition of frozen treats.</p>
+        </article>
+        <div class="col-md-6">
+            <img src="/images/events1.svg" class="img-fluid" alt="Responsive image">
+        </div>
+        <article class="col-md-3">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Amelia Lincoln">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="party-number">Group Size</label>
+                    <select class="form-control" id="party-number">
+                      <option>How many in your party?</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Choose A Day</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Available Dates--</option>
+                    <option>Jan-22nd</option>
+                    <option>Jan-23rd</option>
+                    <option>Jan-24th</option>
+                  </select>
+                </div>
+                <button id="submit" class="btn btn-primary" type="submit" >Submit</button>
+              </form>
+        </article>
+    </div>
+</section>
 
-<h1>
+<section class="container-fluid sectionMargin">
+    <div class="row">
+        <article class="col-12 text-center">
+            <h1 display-2>Past Events -</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque saepe odio rem libero facere corrupti voluptas eaque adipisci sequi repellat?</p>
+        </article>
+    </div>
+    <div class="row my-0">
+        <article class="col">
+                <img class="img-fluid" src="/images/events2.svg" alt="Event Logo">
+                <h1 display-1>I am the first heading!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque saepe odio rem libero facere corrupti voluptas eaque adipisci sequi repellat? Repudiandae quos aliquam cumque voluptates, laborum ad tenetur in explicabo!</p>
+        </article>
+
+        <article class="col">
+                <img class="img-fluid" src="/images/events3.svg" alt="Event Logo">
+                <h1 display-1>I am the secon heading!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque saepe odio rem libero facere corrupti voluptas eaque adipisci sequi repellat? Repudiandae quos aliquam cumque voluptates, laborum ad tenetur in explicabo!</p>
+        </article>
+
+        <article class="col">
+                <img class="img-fluid" src="/images/events4.svg" alt="Event Logo">
+                <h1 display-1>I am the third heading!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque saepe odio rem libero facere corrupti voluptas eaque adipisci sequi repellat? Repudiandae quos aliquam cumque voluptates, laborum ad tenetur in explicabo!</p>
+        </article>
+</div>
+</section>
+
+<!-- <a href="https://www.vecteezy.com/free-vector/shop">Shop Vectors by Vecteezy</a> -->
+<%- include("partials/footer") %>
+
+<!-- <h1>
     Welcome To the Events Page -
     Have a large event photo across the top.
     a small RSVP form,
     then cards of upcoming events underneath that
-</h1>
 
-<%- include("partials/footer") %>
+    Or a grid of cards and events. kinda fills the view in all directions like the webflow advert
+</h1> -->
