@@ -15,7 +15,7 @@ body {
   font-size: 1.5rem; }
 
 #headerNav .nav-link {
-  color: white; }
+  color: #555; }
 
 #headerNav .nav-link:hover {
   color: #f498b8; }
@@ -66,19 +66,28 @@ h1 span {
 .sectionMargin {
   margin-top: 5%; }
 
+.btn {
+  color: #fff;
+  background-color: #94bef0;
+  text-shadow: 1px 0.5px #555;
+  border-color: #555;
+  letter-spacing: 0.04rem; }
+  .btn:hover {
+    background-color: #fbdb99;
+    color: #fff; }
+
 hr {
   border: 0;
   margin: 1.35em auto;
   max-width: 100%;
   background-position: 50%;
   box-sizing: border-box; }
-
-.slash-1 {
-  height: 10px;
-  color: #fbdb99;
-  background-image: linear-gradient(-45deg, transparent, transparent 25%, currentColor 25%, currentColor 50%, transparent 50%, transparent 75%, currentColor 75%);
-  background-size: 10px 10px;
-  width: 250px; }
+  hr.slash-1 {
+    height: 10px;
+    color: #fbdb99;
+    background-image: linear-gradient(-45deg, transparent, transparent 25%, currentColor 25%, currentColor 50%, transparent 50%, transparent 75%, currentColor 75%);
+    background-size: 10px 10px;
+    width: 250px; }
 
 /* ===============
 About Page CSS
@@ -88,13 +97,38 @@ About Page CSS
 
 p.title {
   font-family: "Lato", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #555; }
 
 #about-container {
   margin-top: 10%; }
 
 #about-jumbo h1 {
   text-align: center; }
+
+/* ===============
+News Page CSS
+================ */
+.post {
+  background-color: #55555550;
+  border: 1.5px solid #555;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  padding: 2rem; }
+  .post > img {
+    width: 600px;
+    height: auto; }
+
+.blurb.aside label, .blurb.aside ul {
+  font-weight: 400;
+  color: #444;
+  padding: 0.5rem;
+  list-style: none; }
+.blurb.aside li {
+  margin-bottom: 1rem;
+  text-align: left; }
+  .blurb.aside li > i {
+    padding-right: 0.25rem; }
 
 /* ===============
 Footer Page CSS

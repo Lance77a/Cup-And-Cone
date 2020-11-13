@@ -18,9 +18,9 @@ app.get("/about", (req, res) => res.render("about"));
 app.get("/news", (req, res) => {
     let path = './views/news/'
     const posts = fs.readdirSync(path).filter(file => file.endsWith('.md'));
-    const file = posts.map(post => matter.read(path + post));
+    const postsArr = posts.map(post => matter.read(path + post));
     res.render("news", {
-       file
+       postsArr
     });
   });
 

@@ -3,29 +3,47 @@
   <body>
     <div>
         <section class="container-fluid sectionMargin">
-            <div class="row align-items-center">
-                <article class="blurb col-md-2">
-                    <h2>Join our newsletter to keep up to date. Never know where we might pop up next!</h2>
-                    <hr class="slash-1">
+            <div class="row">
+                <article class="blurb aside col-md-2 mt-4">
+                    <h2>Join our newsletter</h2>
+                    <hr class="slash-1" />
                     <form>
-                        <input type="text" />
+                        <div class="form-group">
+                            <label id="newsletter" for="email">Keep up to date with our future events. Never know where we might pop up next!</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <button id="submit" class="btn" type="submit">Submit</button>
                     </form>
                 </article>
                 
-                <article class="blurb col-8">
-                    <% for (item of file) { %>
-                    
-                    <h2> <%= item.data.title %> </h2>
-                    <hr class="slash-1">
-                    <p class="lead"> <%= item.data.description %> </p>
-                    <p class="lead"> <%= item.content %> </p>
+                <article class="blurb col-md-8 col-sm-12 px-0">
+                    <% for (item of postsArr) { %>
+                    <div class="post">
+                        <% if(item.data.image != false){ %>
+                        <img src="<%=item.data.image%>" />
+                        <% } %>
+                        <h2> <%= item.data.title %> </h2>
+                        <hr class="slash-1">
+                        <p class="lead"> <%= item.data.description %> </p>
+                        <p class="lead"> <%= item.content %> </p>
+                    </div>
                     <% } %>
                 </article>
                 
-                <article class="blurb col-md-2">
-                    <h2>Reserve Entry Today!</h2>
+                <article class="blurb aside col-md-2 mt-4">
+                    <h2>Blurbs:</h2>
                     <hr class="slash-1">
-                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat adipisci beatae asperiores temporibus ad odio soluta nemo fuga dicta repellendus, omnis neque officiis tempore iure quod pariatur ratione voluptas sapiente.</p>
+                    <ul>
+                        <li><i class="fas fa-ice-cream"></i>
+                            <%= postsArr[2].data.description %>
+                        </li>
+                        <li><i class="fas fa-ice-cream"></i>
+                            <%= postsArr[1].data.description %>
+                        </li>
+                        <li><i class="fas fa-ice-cream"></i>
+                            <%= postsArr[3].data.description %>
+                        </li>
+                    </ul>
                 </article>
             </div>
         </section>
