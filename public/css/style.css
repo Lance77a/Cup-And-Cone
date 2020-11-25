@@ -7,8 +7,9 @@ body {
   height: 100%; }
 
 #headerNav {
-  font-weight: 100;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  width: 100vw;
+  padding: 0; }
 
 #headerNav .navbar-brand {
   color: #7fffd4;
@@ -27,7 +28,8 @@ h1 span {
 .img-thumbnail {
   padding: 0;
   border: 1px solid #f498b8ee;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  width: 100%; }
 
 #headingGroup > h1 {
   font-family: "Merriweather", sans-serif;
@@ -64,7 +66,7 @@ h1 span {
   padding: 0 1rem; }
 
 .sectionMargin {
-  margin-top: 5%; }
+  margin-top: 5rem; }
 
 .btn {
   color: #fff;
@@ -106,6 +108,9 @@ p.title {
 #about-jumbo h1 {
   text-align: center; }
 
+ul.lead > li {
+  list-style: none; }
+
 /* ===============
 News Page CSS
 ================ */
@@ -118,6 +123,8 @@ News Page CSS
   .post > img {
     width: 600px;
     height: auto; }
+  .post > p a {
+    color: #fbdb99; }
 
 .blurb.aside label, .blurb.aside ul {
   font-weight: 400;
@@ -131,6 +138,17 @@ News Page CSS
     padding-right: 0.25rem; }
 
 /* ===============
+Admin Page CSS
+================ */
+#postForm > label {
+  width: 100%; }
+#postForm > input {
+  width: 70%; }
+#postForm > textarea {
+  width: 100%;
+  height: 5rem; }
+
+/* ===============
 Footer Page CSS
 ================ */
 #footer {
@@ -140,6 +158,8 @@ Footer Page CSS
   background-color: #94bef0;
   border-top: 1px solid #55555555; }
   #footer .footer-item {
-    width: 50%; }
+    width: 50%;
+    margin-block-start: 0;
+    margin-block-end: 0; }
 
 /*# sourceMappingURL=style.css.map */

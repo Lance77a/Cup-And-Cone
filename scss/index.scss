@@ -2,7 +2,6 @@
 @import '_layout';
 @import '_fonts';
 
-
 body {
     background: #eeaeca;
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -12,8 +11,9 @@ body {
 }
 
 #headerNav {
-    font-weight: 100;
     font-size: 1.5rem;
+    width: 100vw;
+    padding: 0;
 }
 
 #headerNav .navbar-brand {
@@ -22,7 +22,7 @@ body {
 }
 
 #headerNav .nav-link {
-color: #555;
+    color: #555;
 }
 
 #headerNav .nav-link:hover {
@@ -38,6 +38,7 @@ h1 span {
     padding: 0;
     border: 1px solid #f498b8ee;
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 #headingGroup > h1 {
@@ -85,7 +86,7 @@ h1 span {
 }
 
 .sectionMargin {
-    margin-top: 5%;
+    margin-top: 5rem;
 }
 
 .btn {
@@ -147,6 +148,10 @@ p.title {
     text-align: center;
 }
 
+ul.lead > li {
+    list-style: none;
+}
+
 
 /* ===============
 News Page CSS
@@ -161,6 +166,9 @@ News Page CSS
     & > img {
         width: 600px;
         height: auto;
+    }
+    & > p a {
+        color: $yellow;
     }
 }
 
@@ -182,6 +190,23 @@ News Page CSS
 
 
 /* ===============
+Admin Page CSS
+================ */
+#postForm {
+    & > label {
+        width: 100%;
+    }
+    & > input {
+        width: 70%;
+    }
+    & > textarea {
+        width: 100%;
+        height: 5rem;
+    }
+}
+
+
+/* ===============
 Footer Page CSS
 ================ */
 
@@ -193,6 +218,9 @@ Footer Page CSS
     border-top: 1px solid #55555555;
     .footer-item {
         width: 50%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        
     }
 }
 

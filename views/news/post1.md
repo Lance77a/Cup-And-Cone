@@ -1,8 +1,8 @@
 ---
-title: Announcements!
-description: This is a perfect way to keep your customers in touch with your business!
+title: News Explained -
+description: Taking advantage of node.js and Gray-Matter!
 image: false
 ---
-This node.js blog is lightweight and straightfoward to update. What you are seeing is .md files formatted with a simple structure and fed into a component to render each post on the page. As an admin, you would have access to an admin page that allows for you to fill a template to produce your own posts. Alternatively, it can be connected easily to a CMS of your choosing with minimal configuration.
+This blog is straightfoward and simple to use. Each post is a .md file templated with Gray-matter to give you a an optional image, title area, description, and content field. Which is then fed into EJS and rendered to the page.
 
-This is where content resides! the main bulk of the text that will propabably end up in a paragraph tag!
+ 
