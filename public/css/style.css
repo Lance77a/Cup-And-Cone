@@ -7,19 +7,20 @@ body {
   height: 100%; }
 
 #headerNav {
-  font-size: 1.5rem;
-  width: 100vw;
-  padding: 0; }
-
-#headerNav .navbar-brand {
-  color: #7fffd4;
   font-size: 1.5rem; }
+  #headerNav .navbar-brand {
+    color: #7fffd4;
+    font-size: 1.5rem; }
+  #headerNav .nav-link {
+    color: #555; }
+    #headerNav .nav-link:hover {
+      color: #f498b8; }
+  #headerNav .scroll.scrolled {
+    color: #fbdb99; }
 
-#headerNav .nav-link {
-  color: #555; }
-
-#headerNav .nav-link:hover {
-  color: #f498b8; }
+.navbar.scrolled {
+  background: #7fffd4;
+  transition: background 1s; }
 
 h1 span {
   color: #7fffd4;
@@ -27,23 +28,14 @@ h1 span {
 
 .img-thumbnail {
   padding: 0;
-  border: 1px solid #f498b8ee;
-  margin-bottom: 0.5rem;
-  width: 100%; }
+  border: 1px solid #f498b8ee; }
 
 #headingGroup > h1 {
   font-family: "Merriweather", sans-serif;
   color: #fbdb99;
   font-size: 4em;
   font-weight: 100;
-  text-shadow: 2px 4px 3px rgba(250, 188, 70, 0.3); }
-
-.navbar.scrolled {
-  background: #7fffd4;
-  transition: background 1s; }
-
-#headerNav .scroll.scrolled {
-  color: #fbdb99; }
+  text-shadow: 2px 4px 3px #55555555; }
 
 @media (max-width: 1200px) {
   #headingGroup h1 {
@@ -66,7 +58,7 @@ h1 span {
   padding: 0 1rem; }
 
 .sectionMargin {
-  margin-top: 5rem; }
+  margin: 3rem auto; }
 
 .btn {
   color: #fff;

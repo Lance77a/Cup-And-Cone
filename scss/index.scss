@@ -12,22 +12,25 @@ body {
 
 #headerNav {
     font-size: 1.5rem;
-    width: 100vw;
-    padding: 0;
-}
-
-#headerNav .navbar-brand {
+    & .navbar-brand {
     color: $mint;
     font-size: 1.5rem;
+    }
+    & .nav-link {
+        color: #555;
+        &:hover {
+            color: $pink;
+        }
+    }
+    & .scroll.scrolled {
+        color: $yellow;
+    }
+}
+.navbar.scrolled {
+    background: $mint;
+    transition: background 1s;
 }
 
-#headerNav .nav-link {
-    color: #555;
-}
-
-#headerNav .nav-link:hover {
-    color: $pink;
-}
 
 h1 span {
     color: $mint;
@@ -37,8 +40,6 @@ h1 span {
 .img-thumbnail {
     padding: 0;
     border: 1px solid #f498b8ee;
-    margin-bottom: 0.5rem;
-    width: 100%;
 }
 
 #headingGroup > h1 {
@@ -46,16 +47,8 @@ h1 span {
     color: $yellow;
     font-size: 4em;
     font-weight: 100;
-    text-shadow: 2px 4px 3px rgba(250,188,70,0.3);
-}
-
-.navbar.scrolled {
-    background: $mint;
-    transition: background 1s;
+    text-shadow: 2px 4px 3px #55555555;
     
-}
-#headerNav .scroll.scrolled {
-    color: $yellow;
 }
 
 @media (max-width: 1200px) {
@@ -82,11 +75,10 @@ h1 span {
     font-size: 1.275rem;
     line-height: 2rem;
     padding: 0 1rem;
-    
 }
 
 .sectionMargin {
-    margin-top: 5rem;
+    margin: 3rem auto;
 }
 
 .btn {
