@@ -193,13 +193,16 @@ Admin Page CSS
 ================ */
 #postForm {
     & > label {
-        width: 100%;
+        font-size: 1.2rem;
+        width: 90%;
+        text-align: left;
+        padding-top: 0.5rem;
     }
     & > input {
-        width: 70%;
+        width: 90%;
     }
     & > textarea {
-        width: 100%;
+        width: 90%;
         height: 5rem;
     }
 }

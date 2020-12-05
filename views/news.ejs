@@ -2,21 +2,21 @@
 <html>
   <body>
     <div>
-        <section class="container-fluid sectionMargin">
-            <div class="row">
-                <article class="blurb aside col-md-2 mt-4">
-                    <h2>Join our newsletter</h2>
+        <section class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <article class="blurb aside col-md-6 col-lg-3 mt-5">
+                    <h2>Newsletter</h2>
                     <hr class="slash-1" />
                     <form>
                         <div class="form-group">
-                            <label id="newsletter" for="email">Keep up to date with our future events. Never know where we might pop up next!</label>
+                            <label id="newsletter" for="email">Join out mailing list to keep up to date with our future events. Never know where we might pop up next!</label>
                             <input type="email" class="form-control" id="email" placeholder="name@example.com">
                         </div>
                         <button id="submit" class="btn" type="submit">Submit</button>
                     </form>
                 </article>
                 
-                <article class="blurb col-md-8 col-sm-12 px-0">
+                <article class="blurb col-md-10 col-lg-6 px-0">
                     <div class="post">
                         <h2>Announcements!</h2>
                         <hr class="slash-1">
@@ -26,7 +26,9 @@
                     <% for (item of postsArr) { %>
                     <div class="post">
                         <% if(item.data.image != false){ %>
-                        <img src="<%=item.data.image%>" />
+                        <div class="pb-2">
+                            <img class="img-fluid img-thumbnail" src="<%=item.data.image%>" />
+                        </div>
                         <% } %>
                         <h2> <%= item.data.title %> </h2>
                         <hr class="slash-1">
@@ -36,7 +38,7 @@
                     <% } %>
                 </article>
                 
-                <article class="blurb aside col-md-2 mt-4">
+                <article class="blurb aside d-none d-lg-block col-md-2 col-lg-3 mt-5">
                     <h2>Blurbs:</h2>
                     <hr class="slash-1">
                     <ul>

@@ -1,26 +1,28 @@
 <%- include("partials/header") %>
 
-<section class="container-fluid sectionMargin">
-    <div class="row">
-        <article class="blurb aside col-md-2 mt-4">
-            <h2>Join our newsletter</h2>
+<section class="container-fluid mt-4">
+    <div class="row justify-content-center">
+        <article class="blurb aside col-md-6 col-lg-3 mt-5">
+            <h2>Newsletter</h2>
             <hr class="slash-1" />
             <form>
                 <div class="form-group">
-                    <label id="newsletter" for="email">Keep up to date with our future events. Never know where we might pop up next!</label>
+                    <label id="newsletter" for="email">Join out mailing list to keep up to date with our future events. Never know where we might pop up next!</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
                 <button id="submit" class="btn" type="submit">Submit</button>
             </form>
         </article>
         
-        <article class="blurb col-md-8 col-sm-12 px-0">
+        <article class="blurb col-md-10 col-lg-6 px-0">
             <div id="postContainer" class="post">
-                <img id="postImage" src="" />
+                <div class="pb-2">
+                    <img id="postImage" class="img-fluid img-thumbnail" src="" />
+                </div>
                 <h2 id="postTitle">Post Example</h2>
                 <hr class="slash-1">
                 <p id="postDesc" class="lead">Description will also appear in the "Blurbs" section!</p>
-                <p id="postContent" class="lead">Please use the form below for a spin. The Announcements page can also be easily connected with a CMS for broader control.</p>
+                <p id="postContent" class="lead">Please use the form below to replace this post with your own. The announcements page can also be easily connected to a CMS like Netlify for broader control.</p>
             </div>
             <div class="post">
                 <form id="postForm" action="#">
@@ -28,21 +30,22 @@
                     <input type="text" name="imageUrl"/>
                     
                     <label id="title" for="title">Title:</label>
-                    <input type="text" name="title" />
+                    <input type="text" name="title" required/>
 
                     <hr class="slash-1">
 
                     <label id="description">Description:</label>
-                    <input type="text" name="description" />
+                    <input type="text" name="description" required/>
 
                     <label id="content" for="content">Content:</label>
-                    <textarea type="text" name="content"></textarea>
+                    <textarea type="text" name="content" required></textarea>
+                    <br />
                     <button id="postAnnouncement" class="btn" type="submit">Submit</button>
                 </form>
             </div>
         </article>
-        
-        <article class="blurb aside col-md-2 mt-4">
+
+        <article class="blurb aside d-none d-lg-block col-md-2 col-lg-3 mt-5">
             <h2>Blurbs:</h2>
             <hr class="slash-1">
             <ul>
