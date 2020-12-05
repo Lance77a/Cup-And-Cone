@@ -121,6 +121,13 @@ hr {
 About Page CSS
 ================ */
 
+#about-align {
+    align-items: flex-start;
+    @media (min-width: 992px){
+        align-items: center;
+    }
+}
+
 .about-image {
     border-radius: 50%
 }
