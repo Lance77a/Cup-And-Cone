@@ -28,6 +28,13 @@ Navbar Styling
     }
 }
 
+/* headerHandler JS Toggle Classes*/
+.bg-expand {
+    background-color: $mint;
+}
+.brand-expand {
+    color: $yellow !important;
+}
 .navbar.scrolled {
     background: $mint;
     transition: background 1s;

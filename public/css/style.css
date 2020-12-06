@@ -19,6 +19,13 @@ Navbar Styling
   #headerNav .scroll.scrolled {
     color: #fbdb99; }
 
+/* headerHandler JS Toggle Classes*/
+.bg-expand {
+  background-color: #7fffd4; }
+
+.brand-expand {
+  color: #fbdb99 !important; }
+
 .navbar.scrolled {
   background: #7fffd4;
   transition: background 1s; }
