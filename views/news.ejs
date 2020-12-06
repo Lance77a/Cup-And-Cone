@@ -7,15 +7,15 @@
             <form>
                 <div class="form-group">
                     <label id="newsletter" for="email">Join out mailing list to keep up to date with our future events.
-                        Never know where we might pop up next!</label>
+                        Or you'll never know where we might pop up next!</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
                 <button id="submit" class="btn" type="submit">Submit</button>
             </form>
         </article>
 
-        <article class="blurb col-md-10 col-lg-6 px-0">
-            <div class="post">
+        <article class="col-md-10 col-lg-6 px-0">
+            <div class="post blurb">
                 <h2>Announcements!</h2>
                 <hr class="slash-1">
                 <p class="lead">A blog or news page is a great way to keep your customers up to date and engaged with
@@ -23,7 +23,7 @@
                 <p class="lead"><a href="/news/admin">Create your own posts on the admin page!</a></p>
             </div>
             <% for (item of postsArr) { %>
-            <div class="post">
+            <div class="post blurb">
                 <% if(item.data.image != false){ %>
                 <div class="pb-2">
                     <img class="img-fluid img-thumbnail" src="<%=item.data.image%>" />

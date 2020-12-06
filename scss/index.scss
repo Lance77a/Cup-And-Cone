@@ -1,14 +1,15 @@
 @import '_colors';
-@import '_layout';
 @import '_fonts';
 
 body {
-    background: #eeaeca;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
     font-family: $primary;
     font-weight: 100;
-    height: 100%;
 }
+
+/* ===============
+Navbar Styling
+================ */
 
 #headerNav {
     font-size: 1.5rem;
@@ -17,7 +18,7 @@ body {
     font-size: 1.5rem;
     }
     & .nav-link {
-        color: #555;
+        color: $grey;
         &:hover {
             color: $pink;
         }
@@ -26,67 +27,47 @@ body {
         color: $yellow;
     }
 }
+
 .navbar.scrolled {
     background: $mint;
     transition: background 1s;
 }
 
-
-h1 span {
-    color: $mint;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
+/* ===============
+Layout Styling
+================ */
 
 .img-thumbnail {
     padding: 0;
-    border: 1px solid #f498b8ee;
-}
-
-#headingGroup > h1 {
-    font-family: $header;
-    color: $yellow;
-    font-size: 4em;
-    font-weight: 100;
-    text-shadow: 2px 4px 3px #55555555;
-    
-}
-
-@media (max-width: 1200px) {
-    #headingGroup h1 {
-        font-size: 3.3rem;
-    }
+    border: 1px solid $pink;
 }
 
 .blurb {
     text-align: center;
-}
+    & > h2 {
+        color: $mint;
+        font-weight: 100;
+        font-size: 2.5rem;
+        text-shadow: 2px 3px 3px #55555555;
+    }
 
-.blurb h2 {
-    color: $mint;
-    font-weight: 100;
-    font-size: 2.5rem;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-.blurb .lead {
-    font-family: $text;
-    font-weight: 100;
-    color: #fff;
-    font-size: 1.275rem;
-    line-height: 2rem;
-    padding: 0 1rem;
-}
-
-.sectionMargin {
-    margin: 3rem auto;
+    & > .lead {
+        font-family: $text;
+        font-weight: 100;
+        color: #fff;
+        font-size: 1.275rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+    }
 }
 
 .btn {
     color: #fff;
     background-color: $babyBlue;
-    text-shadow: 1px 0.5px #555;
-    border-color: #555;
+    text-shadow: 1px 0.5px $grey;
+    border-color: $grey;
     letter-spacing: 0.04rem;
+
     &:hover {
         background-color: $yellow;
         color: #fff;
@@ -117,8 +98,31 @@ hr {
 }
 
 
+
 /* ===============
-About Page CSS
+Index Page CSS
+================ */
+
+#headingGroup {
+    & > h1 {
+    font-family: $header;
+    color: $yellow;
+    font-size: 4rem;
+    font-weight: 100;
+    text-shadow: 2px 4px 3px #55555555;
+        & > span {
+            color: $mint;
+        }
+    }
+    @media (max-width: 1200px) {
+        & > h1 {
+            font-size: 3.3rem;
+        }
+    }
+}
+
+/* ===============
+About Page Styling
 ================ */
 
 #about-align {
@@ -138,27 +142,18 @@ p.title {
     color: #555;
 }
 
-
-#about-container {
-    margin-top: 10%;
-}
-
-#about-jumbo h1 {
-    text-align: center;
-}
-
 ul.lead > li {
     list-style: none;
 }
 
 
 /* ===============
-News Page CSS
+News Page Styling
 ================ */
 
 .post {
     background-color: #55555550;
-    border: 1.5px solid #555;
+    border: 1.5px solid $grey;
     border-radius: 0.5rem;
     margin: 2rem 0;
     padding: 2rem;
@@ -174,7 +169,7 @@ News Page CSS
 .blurb.aside {
     label, ul {
         font-weight: 400;
-        color: #444;
+        color: $grey;
         padding: 0.5rem;
         list-style: none;
     }
@@ -189,7 +184,7 @@ News Page CSS
 
 
 /* ===============
-Admin Page CSS
+Admin Page Styling
 ================ */
 #postForm {
     & > label {
@@ -209,20 +204,47 @@ Admin Page CSS
 
 
 /* ===============
-Footer Page CSS
+Footer Page Styling
 ================ */
 
 #footer {
-    text-align: center;
-    width: 100%;
-    color: black;
+    font-weight: 300;
+    color: $grey;
     background-color: $babyBlue;
-    border-top: 1px solid #55555555;
-    .footer-item {
-        width: 50%;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        
-    }
+    border: 1px solid #55555555;
 }
 
+#tooltip {
+    & > .tooltip-text {
+        visibility: hidden;
+        width: 200px;
+        padding: 5px 0;
+        border-radius: 0.5rem;
+        color: #fff;
+        background-color: $grey;
+        opacity: 0;
+        transition: opacity 1s;
+        
+        z-index: 1;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -100px;
+    }
+    
+    & > .tooltip-text::after {
+        position: absolute;
+        content: " ";
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #000 transparent transparent transparent;
+    }
+    
+    &:hover > .tooltip-text { 
+        visibility: visible; 
+        opacity: 1;
+    }
+}

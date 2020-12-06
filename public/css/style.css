@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@400;700;900&family=Nunito:wght@200;300;400;700&display=swap");
 body {
-  background: #eeaeca;
   background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
   font-family: "Nunito", sans-serif;
-  font-weight: 100;
-  height: 100%; }
+  font-weight: 100; }
 
+/* ===============
+Navbar Styling
+================ */
 #headerNav {
   font-size: 1.5rem; }
   #headerNav .navbar-brand {
@@ -22,43 +23,27 @@ body {
   background: #7fffd4;
   transition: background 1s; }
 
-h1 span {
-  color: #7fffd4;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
-
+/* ===============
+Layout Styling
+================ */
 .img-thumbnail {
   padding: 0;
-  border: 1px solid #f498b8ee; }
+  border: 1px solid #f498b8; }
 
-#headingGroup > h1 {
-  font-family: "Merriweather", sans-serif;
-  color: #fbdb99;
-  font-size: 4em;
-  font-weight: 100;
-  text-shadow: 2px 4px 3px #55555555; }
-
-@media (max-width: 1200px) {
-  #headingGroup h1 {
-    font-size: 3.3rem; } }
 .blurb {
   text-align: center; }
-
-.blurb h2 {
-  color: #7fffd4;
-  font-weight: 100;
-  font-size: 2.5rem;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
-
-.blurb .lead {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  color: #fff;
-  font-size: 1.275rem;
-  line-height: 2rem;
-  padding: 0 1rem; }
-
-.sectionMargin {
-  margin: 3rem auto; }
+  .blurb > h2 {
+    color: #7fffd4;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-shadow: 2px 3px 3px #55555555; }
+  .blurb > .lead {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 1.275rem;
+    line-height: 2rem;
+    padding: 0 1rem; }
 
 .btn {
   color: #fff;
@@ -84,7 +69,22 @@ hr {
     width: 250px; }
 
 /* ===============
-About Page CSS
+Index Page CSS
+================ */
+#headingGroup > h1 {
+  font-family: "Merriweather", sans-serif;
+  color: #fbdb99;
+  font-size: 4rem;
+  font-weight: 100;
+  text-shadow: 2px 4px 3px #55555555; }
+  #headingGroup > h1 > span {
+    color: #7fffd4; }
+@media (max-width: 1200px) {
+  #headingGroup > h1 {
+    font-size: 3.3rem; } }
+
+/* ===============
+About Page Styling
 ================ */
 #about-align {
   align-items: flex-start; }
@@ -100,17 +100,11 @@ p.title {
   font-weight: 400;
   color: #555; }
 
-#about-container {
-  margin-top: 10%; }
-
-#about-jumbo h1 {
-  text-align: center; }
-
 ul.lead > li {
   list-style: none; }
 
 /* ===============
-News Page CSS
+News Page Styling
 ================ */
 .post {
   background-color: #55555550;
@@ -126,7 +120,7 @@ News Page CSS
 
 .blurb.aside label, .blurb.aside ul {
   font-weight: 400;
-  color: #444;
+  color: #555;
   padding: 0.5rem;
   list-style: none; }
 .blurb.aside li {
@@ -136,7 +130,7 @@ News Page CSS
     padding-right: 0.25rem; }
 
 /* ===============
-Admin Page CSS
+Admin Page Styling
 ================ */
 #postForm > label {
   font-size: 1.2rem;
@@ -150,17 +144,39 @@ Admin Page CSS
   height: 5rem; }
 
 /* ===============
-Footer Page CSS
+Footer Page Styling
 ================ */
 #footer {
-  text-align: center;
-  width: 100%;
-  color: black;
+  font-weight: 300;
+  color: #555;
   background-color: #94bef0;
-  border-top: 1px solid #55555555; }
-  #footer .footer-item {
-    width: 50%;
-    margin-block-start: 0;
-    margin-block-end: 0; }
+  border: 1px solid #55555555; }
+
+#tooltip > .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  padding: 5px 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #555;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px; }
+#tooltip > .tooltip-text::after {
+  position: absolute;
+  content: " ";
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent; }
+#tooltip:hover > .tooltip-text {
+  visibility: visible;
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

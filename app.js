@@ -1,7 +1,8 @@
 const
 express = require('express'),
 app     = express(),
-fs = require('fs');
+PORT    = process.env.PORT || 3000;
+fs      = require('fs');
 
 // App Config -
 app.set("view engine", "ejs");
@@ -28,4 +29,4 @@ app.get("/news/admin", (req, res) => res.render("admin"));
 
 app.get("/events", (req, res) => res.render("events"));
 
-app.listen(3000, () => console.log('Server running on port 3000!'))
+app.listen(PORT, () => console.log(`Server running on ${PORT}!`))
