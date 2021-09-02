@@ -159,6 +159,11 @@ Footer Page Styling
   background-color: #94bef0;
   border: 1px solid #55555555; }
 
+#site-link {
+  color: inherit; }
+  #site-link:hover {
+    color: #333; }
+
 #tooltip > .tooltip-text {
   visibility: hidden;
   width: 200px;
