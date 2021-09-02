@@ -221,6 +221,13 @@ Footer Page Styling
     border: 1px solid #55555555;
 }
 
+#site-link {
+    color: inherit;
+    &:hover {
+        color: #333;
+    }
+}
+
 #tooltip {
     & > .tooltip-text {
         visibility: hidden;
